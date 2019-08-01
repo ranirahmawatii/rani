@@ -16,9 +16,9 @@ class CreateSimpanansTable extends Migration
         Schema::create('simpanans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama_simpanan');
-            $table->integer('anggotas_id');
+            $table->unsignedBigInteger('anggotas_id');
             $table->date('tgl_simpanan');
-            $table->integer('angsuran_ke');
+            $table->integer('besar_simpanan');
             $table->timestamps();
         });
     }
