@@ -36,6 +36,7 @@
 
                      @guest
                     @else
+                    @role('admin')
                     <li class="nav-item">
                                 <a class="nav-link" href="#">menu1</a>
                             </li>
@@ -46,6 +47,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">menu3</a>
                             </li>
+                            @endrole
                             @endguest
 
                     </ul>
